@@ -1,3 +1,80 @@
-html {
+body {
+  font-family: sans-serif;
+  background-color: #EFF2E4;
+  overflow-x: hidden;
+}
 
+.sidebar {
+  width: 140px;
+  height: 100%;
+  position: fixed;
+  background-color: #243E36;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  color: white;
+  font-size: 22px;
+  text-align: left;
+  padding: 15px 15px 20px 20px;
+}
+
+.sidebar ul li:hover {
+  background-color: #457768;
+}
+
+.header {
+  background-color: #24322B;
+  margin-right: -40px;
+}
+
+.header h3 {
+  padding: 10px 0px 10px 10px;
+  color: #CCFCCB;
+  margin: 0;
+  margin-top: -10px;
+}
+
+.page_title {
+  background-image: url('leaf_bg1.jpg');
+  margin-right: -40px;
+  background-repeat: repeat;
+  outline-style: solid;
+  outline-offset: -15px;
+  outline-color: #EFF2E4;
+  outline-width: thick;
+}
+
+.page_title h1{
+  color: white;
+  opacity: 0.92;
+  padding: 40px 0px 40px 10px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.main {
+  display: inline-block;
+  text-align: left;
+  padding-left: 130px;
+  font-size: 20px;
+  margin: 0px;
+}
+
+.sub_content {
+  padding-left: 10px;
+}
+
+.footer {
+  opacity: 0.75;
+  text-align: center;
+  font-size: 14px;
 }
