@@ -5,13 +5,13 @@ body {
 }
 
 .sidebar {
-  width: 140px;
+  width: 160px;
   height: 100%;
   position: fixed;
   background-color: #243E36;
   top: 0;
   left: 0;
-  overflow-y: auto;
+  overflow-y: visible;
 }
 
 .sidebar ul {
@@ -29,6 +29,11 @@ body {
 
 .sidebar ul li:hover {
   background-color: #457768;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .header {
@@ -64,9 +69,10 @@ body {
 .main {
   display: inline-block;
   text-align: left;
-  padding-left: 130px;
+  padding-left: 150px;
   font-size: 20px;
   margin: 0px;
+  width: 86%;
 }
 
 .sub_content {
