@@ -84,3 +84,16 @@ body {
   text-align: center;
   font-size: 14px;
 }
+
+/*form formatting*/
+#quiz_status {
+  padding-left: 100px;
+}
+
+#quiz {
+  margin-left: 100px;
+}
+
+#quiz input[type=radio] {
+  padding: 15px, 5px, 15px, 5px;
+}
