@@ -4,6 +4,31 @@
     <link rel="stylesheet" type="text/css" href="tswtabs.css">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <title>Environmental Education</title>
+    <style>
+    .accordion {
+          background-color: #243E36;
+          color: inherit;
+          cursor: pointer;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          transition: 0.4s;
+          font-size: inherit;
+        }
+
+        .active, .accordion:hover {
+          background-color: #3F6B5E;
+        }
+
+        .panel {
+          display: none;
+          background-color: #182923;
+          padding-left: 10px;
+          overflow: visible;
+          color: black;
+        }
+    </style>
   </head>
   <body><!--<doctype! html="">-->
       <title></title>
@@ -11,8 +36,19 @@
           <div id="tswcsstabs">
 						<ul>
 							<li><a href="file:///C:/Users/ceo/OneDrive/Desktop/ECATER/CATER%20WPI%20Frontiers%20Computer%20Science/index.html">Emily Grace Personal Web Page</a></li>
-							<li><a href="TBD">Green Living Informational Page</a></li>
-							<li><a href="TBD">World Hunger Informational Page</a></li>
+              <li><a href="TBD">World Hunger</a></li>
+              <li style = "padding: 0">
+              <button class="accordion">Green Living</button>
+              <div class="panel">
+                <ul>
+                  <li><a href = "greenliving_landing.html">Overview</a></li>
+                  <li><a href = "greenliv_housing.html">Housing Needs</a></li>
+                  <li><a href = "greenliv_food.html">Food</a></li>
+                  <li><a href = "greenliv_transport.html">Transport</a></li>
+                  <li><a href = "greenliving_web.html">Quiz</a></li>
+                </ul>
+              </div>
+              </li>
 						</ul>
 					</div>
       </div>
@@ -35,5 +71,21 @@
         </div>
       </div>
     <!--</doctype!>-->
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
   </body>
 </html>

@@ -3,19 +3,55 @@
   <head lang = "en">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <script src = "greenliving_quiz_validation.js"></script>
-    <title></title>
+    <title>Green Living</title>
+    <style>
+    .accordion {
+          background-color: #243E36;
+          color: inherit;
+          cursor: pointer;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          transition: 0.4s;
+          font-size: inherit;
+        }
+
+        .active, .accordion:hover {
+          background-color: #3F6B5E;
+        }
+
+        .panel {
+          display: none;
+          background-color: #182923;
+          padding-left: 10px;
+          overflow: visible;
+          color: black;
+        }
+    </style>
   </head>
   <body>
     <div class = "sidebar">
       <ul>
-        <li>Topic 1</li>
-        <li>Topic 2</li>
-        <li>Topic 3</li>
+        <li><a href = "Environmental Education Climate Change.html">Climate Change</a></li>
+        <li>World Hunger</li>
+        <li style = "padding: 0">
+        <button class="accordion">Green Living</button>
+        <div class="panel">
+          <ul>
+            <li><a href = "greenliving_landing.html">Overview</a></li>
+            <li><a href = "greenliv_housing.html">Housing Needs</a></li>
+            <li><a href = "greenliv_food.html">Food</a></li>
+            <li><a href = "greenliv_transport.html">Transport</a></li>
+            <li><a href = "greenliving_web.html">Quiz</a></li>
+          </ul>
+        </div>
+        </li>
       </ul>
     </div>
     <div class = "main">
     <div class = "header">
-      <h3>Website Name :D</h3>
+      <h3>Green Living</h3>
     </div>
     <div class = "page_title">
       <h1>Quiz: How Green are You?</h1>
@@ -30,5 +66,21 @@
       <p>Copyright &copy; 2021. All rights reserved.</p>
     </div>
     </div>
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
   </body>
 </html>

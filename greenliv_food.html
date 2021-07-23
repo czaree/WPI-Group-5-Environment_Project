@@ -1,0 +1,114 @@
+<DOCTYPE! HTML>
+<html>
+  <head lang = "en">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <style>
+    .accordion {
+          background-color: #243E36;
+          color: inherit;
+          cursor: pointer;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          transition: 0.4s;
+          font-size: inherit;
+        }
+
+        .active, .accordion:hover {
+          background-color: #3F6B5E;
+        }
+
+        .panel {
+          display: none;
+          background-color: #182923;
+          padding-left: 10px;
+          overflow: visible;
+          color: black;
+        }
+    </style>
+    <title>Green Living</title>
+  </head>
+  <body>
+    <div class = "sidebar">
+      <ul>
+        <li><a href = "Environmental Education Climate Change.html">Climate Change</a></li>
+        <li>World Hunger</li>
+        <li style = "padding: 0">
+        <button class="accordion">Green Living</button>
+        <div class="panel">
+          <ul>
+            <li><a href = "greenliving_landing.html">Overview</a></li>
+            <li><a href = "greenliv_housing.html">Housing Needs</a></li>
+            <li><a href = "greenliv_food.html">Food</a></li>
+            <li><a href = "greenliv_transport.html">Transport</a></li>
+            <li><a href = "greenliving_web.html">Quiz</a></li>
+          </ul>
+        </div>
+        </li>
+      </ul>
+    </div>
+    <div class = "main">
+    <div class = "header">
+      <h3>Green Living</h3>
+    </div>
+    <div class = "page_title">
+      <h1>Food</h1>
+    </div>
+    <div class = "sub_content">
+      <p>A major contributor to poverty and global hunger is food waste. Both in the kitchen and in grocery stores, tons upon tons of food ends up being thrown away before it can be eaten every year,
+        almost 750 billion dollars worth in total according to the FOA. Those with a stable income almost never hesitate to throw out what they don’t like. Reversing this trend and instead providing
+        wasted food to those in need could possibly feed up to 2 billion extra people.</p>
+
+<h3>In Public</h3>
+<p>When going to the grocery store, plan out what meals to eat for the week,
+  and then write up a list of everything that is not already at home. Then,
+  try to stick to buying only what you need. Whether buying items in bulk or
+  adding unnecessary purchases, be careful of buying so much that items will
+  inevitably end up going bad. Additionally, while looking at produce, try to
+  choose the less ‘pretty’ looking fruits and vegetables. Because of the way they look,
+  disfigured produce often ends up left behind or binned even though they are still
+  perfectly safe to eat. Depending on the store, such ‘ugly’ products may even be sold at a discount.</p>
+
+<p>Eating out at restaurants also often creates a significant amount of wasted food.
+  Request smaller portion sizes if available, or try to take any leftovers home in a
+  box to eat later instead of leaving it behind.</p>
+
+<h3>In the Kitchen</h3>
+<p>Most of the time, a surplus of food is purchased at the store or brought home
+  from eating out, which ends up sitting in the fridge for a few weeks before being thrown out while being lightly or never used.
+  In order to avoid wasting as much food, be sure to check expiration dates often.</p>
+
+<p>Prioritize items that are close to expiring over anything brand new. Even if something is said to be past expiration, it is possible that it may still be edible. Trust your senses first and foremost. According to the FDA, “Confusion over date labeling accounts for an estimated 20 percent of consumer food waste.” As long as it has not majorly changed in color, consistency, texture, and often smell, the product may still be suitable for consumption. Always err on the side of caution of course, be sure to check online or with the manufacturers before eating anything that is possibly expired.
+
+<p>Tip: try using rotting bananas for banana bread. It’s both delicious and eco-friendly!</p>
+
+<p>If you ever find that there is way too much food to ever consume, one of the most effective
+  solutions to preventing waste is to donate to a local pantry or shelter, or give it away to a friend.
+  Try packing some extra food into containers and offering it to neighbors, co-workers, or other friends.</p>
+
+<p>If the food is within the guidelines of a local food drive, shelter, or pantry, consider offering it to them instead of throwing it away. Always check the website or other listings of what is considered acceptable before attempting to give, standards vary widely from location to location. It will always be better to provide food to someone rather than it ending up rotting away in the ground or at a dump.
+      </p>
+    </div>
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+    <div class = "footer">
+      <p>Copyright &copy; 2021. All rights reserved.</p>
+    </div>
+    </div>
+  </body>
+</html>

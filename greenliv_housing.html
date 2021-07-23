@@ -1,0 +1,106 @@
+<DOCTYPE! HTML>
+<html>
+  <head lang = "en">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <style>
+    .accordion {
+          background-color: #243E36;
+          color: inherit;
+          cursor: pointer;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          transition: 0.4s;
+          font-size: inherit;
+        }
+
+        .active, .accordion:hover {
+          background-color: #3F6B5E;
+        }
+
+        .panel {
+          display: none;
+          background-color: #182923;
+          padding-left: 10px;
+          overflow: visible;
+          color: black;
+        }
+    </style>
+    <title>Green Living</title>
+  </head>
+  <body>
+    <div class = "sidebar">
+      <ul>
+        <li><a href = "Environmental Education Climate Change.html">Climate Change</a></li>
+        <li>World Hunger</li>
+        <li style = "padding: 0">
+        <button class="accordion">Green Living</button>
+        <div class="panel">
+          <ul>
+            <li><a href = "greenliving_landing.html">Overview</a></li>
+            <li><a href = "greenliv_housing.html">Housing Needs</a></li>
+            <li><a href = "greenliv_food.html">Food</a></li>
+            <li><a href = "greenliv_transport.html">Transport</a></li>
+            <li><a href = "greenliving_web.html">Quiz</a></li>
+          </ul>
+        </div>
+        </li>
+      </ul>
+    </div>
+    <div class = "main">
+    <div class = "header">
+      <h3>Green Living</h3>
+    </div>
+    <div class = "page_title">
+      <h1>Housing Needs</h1>
+    </div>
+    <div class = "sub_content">
+      <p>
+One of the biggest drains on the world’s natural resources are the demands for energy created by the average household. According to the United Nations Environmental Programme, “Household consumption is ‘responsible for up to 60 percent of global greenhouse gas emissions and between 50 and 80 percent of total land, material, and water use.’”  Much of the technology humans rely on to meet basic needs are powered by electricity or running water. Because of the way much of this needed energy is sourced, the more and more demand there is for electricity and clean water, the worse the planet becomes. However, focusing your household towards low-carbon and energy efficient solutions can help ease some of the environmental strain.</p>
+
+<h3>Electricity</h3>
+<p>The three categories of energy generation methods in the United States are fossil fuels, nuclear, and renewable energy. Of these three, utilizing fossil fuel is the most common, and most dangerous. Fuel is extracted from the earth itself, and then used as a heat source in steam or gas turbines in order to generate electricity. The byproduct of using fossil fuels in this process is a release of massive amounts of carbon dioxide and other pollutants into the atmosphere, which can lead to negative effects on the environment, including climate change and global warming.</p>
+
+<p>Even though the process of producing electricity is not something that can be impacted by actions taken on a household level, there are still opportunities to reduce the overall use of energy in the home. Even the smallest effort to use less electricity will mean that a little less fossil fuels needs to be burned that day.</p>
+
+<p>One of the easiest ways to ensure a smaller carbon footprint is unplugging appliances that aren’t being used. If something doesn’t need to be fed energy, like an idle gaming console or lights in a room that aren’t being used, consider turning them off or unplugging them.</p>
+
+<p>Another eco-friendly, but more costly investment, would be to purchase alternative products which can utilize electricity more efficiently, or even not require electricity at all. Swapping out lightbulbs in the home for ones which are low-energy, or even using sensor lighting to automatically turn off the lights. Devices and strategies which do not use any electricity, such as opting to use screened windows to keep the house cool instead of using air conditioning, or even just wearing cooler clothing, may also be wise choices to make.</p>
+
+<h3>Water</h3>
+<p>Clean, running water, is another basic need that humans often take for granted. Whether it be for drinking, doing the dishes, watering a garden or even flushing the toilet, a large amount of the liquid is required to keep a household running. After water is done being used, it is drained away by pipes to a sewage treatment plant, where it must be processed and treated to remove debris in order to be acceptable for use once again. The entire process, similar to generating electricity, also releases byproducts of nitrogen and phosphorus into the bodies of water where the treated water is released at the end of the process. Therefore, reducing or reusing water to prevent as much waste water from being created as possible is the goal.<p>
+
+<p>The simplest way to help reduce water pollution is to cut down on the amount of water you use in a day. Consider taking shorter showers, turning off the sink when not actively using the water, or taking a bath instead of a shower. Investing in flow restrictors, or more efficient toilets and dishwashers, may also be an available option.</p>
+
+<p>Another possibility is the reuse of wastewater. Much of the water households require is considered greywater, or gently used water which has not come into contact with hazardous materials, such as feces. While it may contain items such as dirt, hair, or grease which makes it appear dirty, greywater is a valuable source of nutrients to plants, which would otherwise become pollution if released into a nearby lake, river, or pond.</p>
+
+<p>However, reusing greywater to water a yard or garden reduces water bills, helps the environment, and gives any watered plants a great source of nutrients. It is recommended that greywater is used upon purely ornamental plants  or fruit trees for ease, but it can also be used to irrigate vegetable plants as long as none of the greywater comes into contact with any edible portions of the plant.</p>
+
+<p>Another effective alternative to greywater is rainwater collection. Similarly to the barely used water that is pumped out of the home, rainwater is not completely safe for drinking, as it may contain particles of dirt and other debris collected from the atmosphere, as well as any substances it may have washed over and picked up, such as bird poop, chemicals, and bacteria. As long as it is not prohibited within the area however, rain water can at the very least be used as an option for watering a yard or garden. With the proper filtration equipment and regular, rainwater may also be safe to use for activities such as cooking, cleaning, or bathing.</p>
+
+<p>When collecting and using greywater or rainwater, always be sure that your actions are safe and lawful. Check with local health authorities for guidelines on how to process and use these alternatives, and be sure to purchase the proper equipment and test it properly before proceeding. The environment appreciates your effort towards living green, but make sure to stay safe while doing so!**
+</p>
+    </div>
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+    <div class = "footer">
+      <p>Copyright &copy; 2021. All rights reserved.</p>
+    </div>
+    </div>
+  </body>
+</html>
