@@ -28,7 +28,7 @@ var questions = [
     b: "Opening all windows with screens for a short amount of time to let air circulate",
     c: "Plugging 5 different fans into the wall",
     d: "Taking a cold shower, and then using a blow drier",
-    answer: "C",
+    answer: "B",
     },
     {
       question: "Which of the following activities is it safe to use greywater to do?",
@@ -36,7 +36,7 @@ var questions = [
       b: "Water a yard or garden",
       c: "Take a bath or shower",
       d: "Doing the dishes",
-      answer: "C",
+      answer: "B",
       },
       {
         question: "What is the highest contributor to greenhouse gas emissions, making up about 29% of all produced?",
@@ -44,7 +44,7 @@ var questions = [
         b: "Industry and manufacturing",
         c: "Agriculture",
         d: "Generating Electricity",
-        answer: "C",
+        answer: "A",
       },
 ];
 
